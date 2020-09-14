@@ -9,6 +9,7 @@ from ..cli.dag import dag
 from ..cli.dryrun import dryrun
 from ..cli.format import format
 from ..cli.udf import udf, mozfun
+from ..glam.cli import glam
 from .._version import __version__
 
 
@@ -21,6 +22,7 @@ def cli():
         "format": format,
         "udf": udf,
         "mozfun": mozfun,
+        "glam": glam,
     }
 
     @click.group(commands=commands)
